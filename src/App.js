@@ -83,7 +83,11 @@ const App = () => {
 
    }
 
-
+  const connectWallet = async()=>{
+    return(
+      console.log("hello")
+    )
+  }
 
 
   return (
@@ -94,6 +98,7 @@ const App = () => {
           <Button variant="secondary" onClick={readContract}>Read from contract</Button>{' '}
           <Button variant="primary" onClick={checkWallet }>Balance of wallet</Button>{' '}
           <Button variant="dark" onClick={writeContract}>Write to contract</Button>{' '}
+          <Button variant="info" onClick={connectWallet}>Connect to Hashpack</Button>{' '}
           {/* <Button variant="primary">Primary</Button>{' '} */}
       {/* <Button variant="secondary">Secondary</Button>{' '}
       <Button variant="success">Success</Button>{' '}
